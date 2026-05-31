@@ -138,3 +138,15 @@ footer {
     font-size: 1.8rem;
   }
 }
+
+.section-break {
+    text-align: center;
+    margin: 3rem 0;
+    color: #999;
+    letter-spacing: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.experience-link {
+    margin-top: 2rem;
+}
