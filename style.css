@@ -99,7 +99,7 @@ section.hero {
 }
 
 blockquote {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-style: italic;
   border-left: 2px solid #b8b0a2;
   padding-left: 1.5rem;
@@ -114,6 +114,30 @@ footer {
   color: #666;
 }
 
+.quatrieme-couverture {
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+}
+
+.quatrieme-couverture .book-cover {
+  margin: 0 auto 2rem auto;
+}
+
+.quatrieme-couverture blockquote {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.edition-note {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.3em;
+  color: #666;
+  font-style: italic;
+}
+
 @media (max-width: 900px) {
   body {
     font-size: 0.8rem;
@@ -121,7 +145,7 @@ footer {
   }
 
   header {
-    padding: 0.6rem 4%;
+    padding: 0.5rem 4%;
     font-size: 0.75rem;
   }
 
@@ -132,17 +156,28 @@ footer {
   }
 
   nav .links {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.25rem 0.5em;
-    text-align: center;
-    font-size: 0.6rem;
-    line-height: 1.15;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    font-size: 0.75rem;
+    line-height: 1.2;
   }
 
+  nav .links a {
+    padding: 0.25rem;
+  }
+
+  .book-cover {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
   main,
   section.hero {
-    padding: 1.5rem 5%;
+    padding: 0.8rem 5%;
   }
 
   .hero,
@@ -173,6 +208,11 @@ footer {
   footer {
     font-size: 0.75rem;
   }
+  
+}
+.quatrieme-couverture blockquote {
+  font-size: 0.8rem;
+  line-height: 1.3;
 }
 
 .section-break {
